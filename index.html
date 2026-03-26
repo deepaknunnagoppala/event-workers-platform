@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<head>
+    <title>Event Worker Platform</title>
+</head>
+<body>
+
+    <h1>Welcome to Worker Hiring Platform</h1>
+
+    <h2>Worker Registration</h2>
+    <form>
+        Name: <input type="text"><br><br>
+        Skill: <input type="text"><br><br>
+        Availability: <input type="text"><br><br>
+        <button type="submit">Register</button>
+    </form>
+
+    <h2>Manager Hiring</h2>
+
+<form onsubmit="findWorkers(event)">
+    Required Skill: <input type="text" id="requiredSkill"><br><br>
+    Required Date: <input type="date" id="requiredDate"><br><br>
+    <button type="submit">Find Workers</button>
+</form>
+
+</body>
+</html>
+<script src="script.js"></script>
+<script src="script.js"></script>
+<button type="button" onclick="postJob()">Post Job</button>
+<h2>Worker Registration</h2>
+<form onsubmit="saveWorker(event)">
+    Name: <input type="text" id="name"><br><br>
+    Skill: <input type="text" id="skill"><br><br>
+    Availability: <input type="text" id="availability"><br><br>
+    <button type="submit">Register</button>
+</form>
+
+<h2>Registered Workers</h2>
+<h2>Search Workers</h2>
+<input type="text" id="search" placeholder="Search by name or skill" onkeyup="searchWorkers()">
+<ul id="workerList"></ul>
+<h2>Registered Workers</h2>
+<ul id="workerList"></ul>
+<h2>Manager Hiring</h2>
+
+<form onsubmit="findWorkers(event)">
+    Required Skill: <input type="text" id="requiredSkill"><br><br>
+    <button type="submit">Find Workers</button>
+</form>
+
+<h2>Available Workers</h2>
+<ul id="availableWorkers"></ul>
+Availability Date: <input type="date" id="availability"><br><br>
